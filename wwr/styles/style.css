@@ -1,0 +1,126 @@
+#container {
+    max-width: 1600px; /* or any desired maximum width */
+    margin: 0 auto; /* centers the container */
+}
+nav a {
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+:root {
+    --primary-color: #87BCDE;
+    --secondary-color: #533747;
+    --accent1-color: #73683B;
+    --accent2-color: #E2C044;
+    --heading-font: "Jaro";
+    --paragraph-font: "Roboto Condensed";
+    --headline-color-on-white: #87BCDE;
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: #87BCDE;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #87BCDE;
+    --nav-link-color: #87BCDE;
+    --nav-background-color: #533747;
+    --nav-hover-link-color: #E2C044;
+    --nav-hover-background-color: #396E94;
+}
+
+body {
+    background-color: #fcfbfb; /* Light shade of white */
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: rgba(20, 30, 13, 0.7); /* Semi-transparent dark color */
+}
+
+nav a {
+    color: var(--nav-link-color); /* 87BCDE */
+    background-color: var(--nav-background-color); /* 533747 */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color); /* 396E94 */
+    color: var(--nav-hover-link-color); /* E2C044 */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.home-title {
+    color: var(--headline-color-on-color); /* white */
+}
+
+h4 {
+    color: var(--headline-color-on-color); /* white */
+}
+
+.book, .join {
+    background-color: var(--primary-color); /* 87BCDE */
+    color: var(--headline-color-on-color); /* white */
+    text-decoration: none; /* Remove underline */
+}
+
+.book:hover, .join:hover {
+    background-color: var(--secondary-color); /* 533747 */
+    color: var(--headline-color-on-color); /* white */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#background {
+    background-color: var(--accent1-color); /* 73683B */
+    height: 725px;
+}
+
+.msg {
+    background-color: var(--primary-color); /* 87BCDE */
+}
+
+.msg h2 {
+    color: var(--headline-color-on-color); /* white */
+}
+
+.msg p {
+    color: var(--paragraph-color-on-color); /* white */
+}
+
+footer {
+    background-color: var(--secondary-color); /* 533747 */
+    color: var(--headline-color-on-color); /* white */
+}
+
+footer a {
+    color: var(--headline-color-on-color); /* white */
+    text-decoration: none; /* Remove underline */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color); /* E2C044 */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
