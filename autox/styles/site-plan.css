@@ -1,7 +1,15 @@
+/* Responsive Images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Oswald');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -25,7 +33,6 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -137,9 +144,7 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;
