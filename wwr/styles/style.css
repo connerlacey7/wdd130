@@ -239,3 +239,40 @@ footer .social img {
         margin-top: 25px;
     }
 }
+
+/* Existing CSS rules */
+
+/* Rivers Page Styles */
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.river {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centering content */
+}
+
+.river-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: inline-block; /* Centering the image within the text-align: center parent */
+}
+
+/* Responsive Design with Media Query */
+@media screen and (max-width: 900px) {
+    /* Existing media query rules */
+    
+    .rivers-grid {
+        display: block;
+    }
+}
+
