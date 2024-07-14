@@ -115,12 +115,13 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-/* Main Content Grid */
+/* Main Content Grid for Subpage */
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   gap: 20px;
+  padding: 2rem;
 }
 
 .main-image {
@@ -129,29 +130,10 @@ main {
   text-align: center;
 }
 
-.introduction {
-  background-color: #f0f0f0;
-  padding: 2rem;
-  text-align: center;
-}
-
-.featured-articles {
+.events-list {
   background-color: #e8e8e8;
   padding: 2rem;
   text-align: center;
-}
-
-.featured-articles article {
-  margin-bottom: 1.5rem;
-}
-
-.featured-articles h3 {
-  margin: 0.5rem 0;
-}
-
-.featured-articles a {
-  text-decoration: none;
-  color: var(--accent2-color);
 }
 
 /* Footer Styles */
@@ -160,14 +142,4 @@ footer {
   color: var(--headline-color-on-color);
   padding: 10px 0;
   margin-top: 20px;
-}
-
-/* Specific styling for the main image on the home page */
-.main-image img {
-  max-width: 100%;
-  height: auto;
-  width: 600px; /* Adjust width to fit within the color block */
-  display: block;
-  margin: 0 auto;
-  border: 5px solid var(--accent1-color); /* Add border to match the color block */
 }
