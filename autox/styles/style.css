@@ -32,17 +32,30 @@
 
 /* General Styles */
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
-  text-align: center;
   font-family: var(--paragraph-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 img {
   display: block;
   margin: 0 auto;
+}
+
+/* Container to centralize the content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Heading Styles */
@@ -64,10 +77,12 @@ hr {
 
 /* Header Styles */
 header {
+  width: 100%;
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
+  box-sizing: border-box;
 }
 
 header > h1, header > h2 {
@@ -91,6 +106,7 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  width: 100%;
 }
 
 nav ul {
@@ -115,13 +131,16 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-/* Main Content Grid for Subpage */
+/* Main Content Grid */
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   gap: 20px;
+  width: 100%;
   padding: 2rem;
+  box-sizing: border-box;
+  justify-items: center;
 }
 
 .main-image {
@@ -130,16 +149,26 @@ main {
   text-align: center;
 }
 
-.events-list {
+.introduction, .featured-articles {
   background-color: #e8e8e8;
   padding: 2rem;
   text-align: center;
 }
 
+.featured-articles article {
+  margin-bottom: 1.5rem;
+}
+
+.featured-articles h3 {
+  margin: 0.5rem 0;
+}
+
 /* Footer Styles */
 footer {
+  width: 100%;
   background-color: var(--paragraph-background-color);
   color: var(--headline-color-on-color);
   padding: 10px 0;
   margin-top: 20px;
+  box-sizing: border-box;
 }
